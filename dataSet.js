@@ -71,32 +71,28 @@ const dataSet = {
           label: 'Blog Pessoal',
           url: 'https://tiagogouvea.com.br/',
           icon: '<i class="fab fa-linkedin text-secondary "></i>',
-        },
-        {
-          type: 'img',
-          url: 'https://picsum.photos/1280/720',
-        },
+        }
       ],
     },
   ],
-
-  socials: [
-    {
-      icon: '<i class="fab fa-twitter text-secondary"></i>',
-      url: 'http://example.com',
-    },
-    {
-      icon: '<i class="fab fa-linkedin text-secondary"></i>',
-      url: 'http://example.com',
-    },
-  ],
+  //
+  // socials: [
+  //   {
+  //     icon: '<i class="fab fa-twitter text-secondary"></i>',
+  //     url: 'http://example.com',
+  //   },
+  //   {
+  //     icon: '<i class="fab fa-linkedin text-secondary"></i>',
+  //     url: 'http://example.com',
+  //   },
+  // ],
 };
 
 const nameElement = document.querySelector('#name');
 const descriptionElement = document.querySelector('#description');
 
 const linksElement = document.querySelector('#links');
-const socialElement = document.querySelector('#social');
+// const socialElement = document.querySelector('#social');
 
 // Path: render.js
 const render = (dataSet) => {
