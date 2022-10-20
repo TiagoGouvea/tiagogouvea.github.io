@@ -17,12 +17,12 @@ const dataSet = {
         {
           label: 'Visit our website',
           url: 'https://www.appmasters.io/en',
-          icon: '<i class="fab fa-twitter text-secondary "></i>',
+          icon: '<i class="fab fa-square-up-right text-secondary "></i>',
         },
         {
           label: 'Schedule a meeting',
           url: 'https://calendly.com/tiago-gouvea/app-masters-meeting',
-          icon: '',
+          icon: '<i class="fab fa-calendar-days text-secondary "></i>',
         },
         {
           label: 'Connect by LinkedIn',
@@ -43,6 +43,7 @@ const dataSet = {
         {
           label: 'Follow me on GitHub',
           url: 'https://github.com/tiagoGouvea/',
+          icon: '<i class="fab fa-github text-secondary "></i>',
         },
         {
           label: 'Follow me on Spotify',
