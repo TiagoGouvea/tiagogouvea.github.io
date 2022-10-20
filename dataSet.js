@@ -32,6 +32,11 @@ const dataSet = {
           icon: '<i class="fab fa-spotify text-secondary "></i>',
         },
         {
+          label: 'Spotify profile',
+          url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
+          icon: '<i class="fab fa-spotify text-secondary "></i>',
+        },
+        {
           type: 'img',
           url: 'https://picsum.photos/1280/720',
         },
