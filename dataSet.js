@@ -3,18 +3,17 @@ const dataSet = {
   description: 'A description',
   sections: [
     {
-      title: 'Secção 1',
-      description: 'A description',
+      title: 'App Masters',
+      description: 'Software development teams dedicated to make projects that grow and last.',
       links: [
         {
-          label: 'Link 1',
-          url: 'http://example.com',
-          // Ícones do FavIcon
+          label: 'Our Website',
+          url: 'https://www.appmasters.io/en',
           icon: '<i class="fab fa-twitter text-secondary "></i>',
         },
         {
-          label: 'Link 2',
-          url: 'http://example.com',
+          label: 'Schedule a meeting',
+          url: 'https://calendly.com/tiago-gouvea/app-masters-meeting',
           icon: '',
         },
         {
@@ -24,13 +23,13 @@ const dataSet = {
       ],
     },
     {
-      title: 'Secção 2',
+      title: 'Personal',
       description: 'A description',
       links: [
         {
-          label: 'Link 3',
-          url: 'http://example.com',
-          icon: '',
+          label: 'Spotify profile',
+          url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
+          icon: '<i class="fab fa-spotify text-secondary "></i>',
         },
         {
           type: 'img',
