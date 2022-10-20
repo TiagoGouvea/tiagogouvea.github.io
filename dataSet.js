@@ -66,12 +66,22 @@ const dataSet = {
         {
           label: 'Hackathon do Moinho',
           url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
-          icon: '<i class="fab fa-spotify text-secondary "></i>',
+          icon: '<i class="fab fa-spotify text-secondary"></i>',
         },
         {
           label: 'Blog Pessoal',
           url: 'https://tiagogouvea.com.br/',
-          icon: '<i class="fab fa-linkedin text-secondary "></i>',
+          icon: '<i class="fab fa-linkedin text-secondary"></i>',
+        },
+        {
+          label: 'Google Developers Group Juiz de Fora',
+          url: 'https://gdgjf.github.io/',
+          icon: '<i class="fab fa-code text-secondary"></i>',
+        },
+        {
+          label: 'Canal no YouTube',
+          url: 'https://www.youtube.com/c/TiagoGouveaProgramador',
+          icon: '<i class="fab fa-youtube text-secondary"></i>',
         }
       ],
     },
