@@ -1,13 +1,21 @@
 const dataSet = {
-  name: '@TiagoGouvea',
-  description: 'A description',
+  name: 'Tiago Gouvea',
+  description: 'CEO & Sr Software Developer at App Masters',
   sections: [
     {
-      title: 'App Masters',
-      description: 'Software development teams dedicated to make projects that grow and last.',
       links: [
         {
-          label: 'Our Website',
+          type: 'img',
+          url: 'https://tiagogouvea.github.io/img/global.png',
+        },
+      ],
+    },
+    {
+      title: 'App Masters',
+      description: 'Software development team dedicated to make projects that grow and last.',
+      links: [
+        {
+          label: 'Visit our website',
           url: 'https://www.appmasters.io/en',
           icon: '<i class="fab fa-twitter text-secondary "></i>',
         },
@@ -17,24 +25,52 @@ const dataSet = {
           icon: '',
         },
         {
-          type: 'youtube',
-          url: 'https://www.youtube.com/embed/tgbNymZ7vqY',
+          label: 'Connect by LinkedIn',
+          icon: '<i class="fab fa-linkedin text-secondary "></i>',
+          url: 'https://www.linkedin.com/company/appmasters.io/mycompany/?viewAsMember=true',
         },
       ],
     },
     {
-      title: 'Personal',
+      title: 'Professional + Personal',
       description: 'A description',
       links: [
         {
-          label: 'Spotify profile',
+          label: 'Connect by LinkedIn',
+          url: 'https://www.linkedin.com/in/tiagogouvea/',
+          icon: '<i class="fab fa-linkedin text-secondary "></i>',
+        },
+        {
+          label: 'Follow me on GitHub',
+          url: 'https://github.com/tiagoGouvea/',
+        },
+        {
+          label: 'Follow me on Spotify',
+          url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
+          icon: '<i class="fab fa-spotify text-secondary "></i>',
+        },
+      ],
+    },
+    {
+      links: [
+        {
+          type: 'img',
+          url: 'https://tiagogouvea.github.io/img/brazil.png',
+        },
+      ],
+    },
+    {
+      title: 'Algo mais',
+      links: [
+        {
+          label: 'Hackathon do Moinho',
           url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
           icon: '<i class="fab fa-spotify text-secondary "></i>',
         },
         {
-          label: 'Spotify profile',
-          url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
-          icon: '<i class="fab fa-spotify text-secondary "></i>',
+          label: 'Blog Pessoal',
+          url: 'https://tiagogouvea.com.br/',
+          icon: '<i class="fab fa-linkedin text-secondary "></i>',
         },
         {
           type: 'img',
@@ -68,23 +104,23 @@ const render = (dataSet) => {
   descriptionElement.innerHTML = dataSet.description;
 
   linksElement.innerHTML = dataSet.sections
-    .map((section) => {
-      return `
+      .map((section) => {
+        return `
       <div class="mb-4">
-        <h3 class="text-secondary">${section.title}</h3>
+        <h4 class="text-secondary">${section.title?section.title:''}</h4>
         <div class="d-flex flex-column align-items-center">
         ${section.links
-          .map((link) => {
-            if (link.type === 'youtube')
-              return `
+            .map((link) => {
+              if (link.type === 'youtube')
+                return `
               <div class="embed-responsive embed-responsive-16by9 my-2">
                 <iframe class="embed-responsive-item" src="${link.url}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>`;
-            if (link.type === 'img')
-              return `
+              if (link.type === 'img')
+                return `
                 <img src="${link.url}" class="img-fluid w-100 my-2" alt="img"/>
               `;
-            return `<a
+              return `<a
           rel="nofollow noopener"
           target="_blank"
           href="${link.url}"
@@ -92,26 +128,26 @@ const render = (dataSet) => {
           >${link.label}</a
         >
         `;
-          })
-          .join('')}
+            })
+            .join('')}
       </div>
     </div>
     `;
-    })
-    .join('');
+      })
+      .join('');
 
-  socialElement.innerHTML = dataSet.socials
-    .map((social) => {
-      return `<li class="list-inline-item">
-      <a 
-      rel="nofollow noopener"
-      target="_blank" 
-      href="${social.url}">
-        ${social.icon}
-      </a>
-      </li>`;
-    })
-    .join('');
+  // socialElement.innerHTML = dataSet.socials
+  //   .map((social) => {
+  //     return `<li class="list-inline-item">
+  //     <a
+  //     rel="nofollow noopener"
+  //     target="_blank"
+  //     href="${social.url}">
+  //       ${social.icon}
+  //     </a>
+  //     </li>`;
+  //   })
+  //   .join('');
 };
 
 // Path: index.js
