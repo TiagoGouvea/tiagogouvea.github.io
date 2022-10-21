@@ -12,7 +12,8 @@ const dataSet = {
     },
     {
       title: 'App Masters',
-      description: 'Software development team dedicated to make projects that grow and last.',
+      description:
+        'Software development team dedicated to make projects that grow and last.',
       links: [
         {
           label: 'Visit our website',
@@ -76,13 +77,13 @@ const dataSet = {
         {
           label: 'Google Developers Group Juiz de Fora',
           url: 'https://gdgjf.github.io/',
-          icon: '<i class="fab fa-code text-secondary"></i>',
+          icon: '<i class="fa fa-code text-secondary"></i>',
         },
         {
           label: 'Canal no YouTube',
           url: 'https://www.youtube.com/c/TiagoGouveaProgramador',
           icon: '<i class="fab fa-youtube text-secondary"></i>',
-        }
+        },
       ],
     },
   ],
@@ -111,37 +112,42 @@ const render = (dataSet) => {
   descriptionElement.innerHTML = dataSet.description;
 
   linksElement.innerHTML = dataSet.sections
-      .map((section) => {
-        return `
+    .map((section) => {
+      return `
       <div class="mb-4">
-        <h4 class="text-secondary">${section.title?section.title:''}</h4>
+        <h4 class="text-secondary">${section.title ? section.title : ''}</h4>
         <div class="d-flex flex-column align-items-center">
         ${section.links
-            .map((link) => {
-              if (link.type === 'youtube')
-                return `
-              <div class="embed-responsive embed-responsive-16by9 my-2">
+          .map((link) => {
+            if (link.type === 'youtube')
+              return `
+              <div class="embed-responsive embed-responsive-16by9 mb-2">
                 <iframe class="embed-responsive-item" src="${link.url}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>`;
-              if (link.type === 'img')
-                return `
-                <img src="${link.url}" class="img-fluid w-100 my-2" alt="img"/>
+            if (link.type === 'img')
+              return `
+                <img src="${link.url}" class="img-fluid w-100 mb-2" alt="img"/>
               `;
-              return `<a
+            return `<a
           rel="nofollow noopener"
           target="_blank"
           href="${link.url}"
           class="btn btn-outline-info btn-lg btn-block"
-          >${link.label}</a
-        >
+          style="white-space: normal;"
+          >
+            <div class="position-absolute">
+            ${link.icon ? link.icon : ''}
+            </div>
+            <p class="m-0 ml-5 ml-sm-0">${link.label}</p>
+          </a>
         `;
-            })
-            .join('')}
+          })
+          .join('')}
       </div>
     </div>
     `;
-      })
-      .join('');
+    })
+    .join('');
 
   // socialElement.innerHTML = dataSet.socials
   //   .map((social) => {
