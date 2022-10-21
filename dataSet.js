@@ -66,7 +66,7 @@ const dataSet = {
       links: [
         {
           label: 'Hackathon do Moinho',
-          url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
+          url: '',
           icon: '<i class="fa fa-robot text-secondary"></i>',
         },
         {
@@ -129,10 +129,15 @@ const render = (dataSet) => {
                 <img src="${link.url}" class="img-fluid w-100 mb-2" alt="img"/>
               `;
             return `<a
-          rel="nofollow noopener"
-          target="_blank"
-          href="${link.url}"
-          class="btn btn-outline-info btn-lg btn-block"
+          ${
+            link.url
+              ? `rel='nofollow noopener' target='_blank' href=${link.url}`
+              : ''
+          }
+         
+          class="btn btn-outline-info btn-lg btn-block ${
+            link.url ? '' : 'disabled'
+          }"
           style="white-space: normal;"
           >
             <div class="position-absolute">
