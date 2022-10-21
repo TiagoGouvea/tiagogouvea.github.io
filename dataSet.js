@@ -18,12 +18,12 @@ const dataSet = {
         {
           label: 'Visit our website',
           url: 'https://www.appmasters.io/en',
-          icon: '<i class="fab fa-square-up-right text-secondary "></i>',
+          icon: '<i class="fa fa-globe text-secondary"></i>',
         },
         {
           label: 'Schedule a meeting',
           url: 'https://calendly.com/tiago-gouvea/app-masters-meeting',
-          icon: '<i class="fab fa-calendar-days text-secondary "></i>',
+          icon: '<i class="far fa-calendar text-secondary"></i>',
         },
         {
           label: 'Connect by LinkedIn',
@@ -67,7 +67,7 @@ const dataSet = {
         {
           label: 'Hackathon do Moinho',
           url: 'https://open.spotify.com/user/12144433211?si=75b2bc0584294c63',
-          icon: '<i class="fab fa-spotify text-secondary"></i>',
+          icon: '<i class="fa fa-robot text-secondary"></i>',
         },
         {
           label: 'Blog Pessoal',
