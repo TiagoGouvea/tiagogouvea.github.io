@@ -28,7 +28,7 @@ const dataSet = {
         {
           label: 'Connect by LinkedIn',
           icon: '<i class="fab fa-linkedin text-secondary "></i>',
-          url: 'https://www.linkedin.com/company/appmasters.io/mycompany/?viewAsMember=true',
+          url: 'https://www.linkedin.com/company/appmasters.io',
         },
       ],
     },
@@ -64,11 +64,11 @@ const dataSet = {
     {
       title: 'Algo mais',
       links: [
-        {
-          label: 'Hackathon do Moinho',
-          url: '',
-          icon: '<i class="fa fa-robot text-secondary"></i>',
-        },
+        // {
+        //   label: 'Hackathon do Moinho',
+        //   url: '',
+        //   icon: '<i class="fa fa-robot text-secondary"></i>',
+        // },
         {
           label: 'Blog Pessoal',
           url: 'https://tiagogouvea.com.br/',
