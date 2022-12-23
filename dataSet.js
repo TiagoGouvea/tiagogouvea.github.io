@@ -157,6 +157,30 @@ const render = (dataSet) => {
   // socialElement.innerHTML = dataSet.socials
   //   .map((social) => {
   //     return `<li class="list-inline-item">
+  //     <a 
+  //     rel="nofollow noopener"
+  //     target="_blank" 
+  //     href="${social.url}">
+  //       ${social.icon}
+  //     </a>
+  //     </li>`;
+  //   })
+  //   .join('');
+  // socialElement.innerHTML = dataSet.socials
+  //   .map((social) => {
+  //     return `<li class="list-inline-item">
+  //     <a
+  //     rel="nofollow noopener"
+  //     target="_blank"
+  //     href="${social.url}">
+  //       ${social.icon}
+  //     </a>
+  //     </li>`;
+  //   })
+  //   .join('');
+  // socialElement.innerHTML = dataSet.socials
+  //   .map((social) => {
+  //     return `<li class="list-inline-item">
   //     <a
   //     rel="nofollow noopener"
   //     target="_blank"
