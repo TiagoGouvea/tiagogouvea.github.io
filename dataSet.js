@@ -75,14 +75,19 @@ const dataSet = {
           icon: '<i class="fab fa-person-walking text-secondary"></i>',
         },
         {
+          label: 'Caminhar e conversar',
+          url: 'https://calendly.com/tiago-gouvea/caminhar-e-conversar',
+          icon: '<i class="fa-solid fa-person-walking text-secondary"></i>',
+        },
+        {
           label: 'Hackathon do Moinho - Janeiro 2023',
           url: 'https://hackathon.nossomoinho.com/',
-          icon: '<i class="fa fa-robot text-secondary"></i>',
+          icon: '<i class="fab fa-robot text-secondary"></i>',
         },
         {
           label: 'Google Developers Group Juiz de Fora',
           url: 'https://gdgjf.github.io/',
-          icon: '<i class="fa fa-code text-secondary"></i>',
+          icon: '<i class="fab fa-code text-secondary"></i>',
         },
         {
           label: 'Canal no YouTube',
