@@ -64,15 +64,20 @@ const dataSet = {
     {
       title: 'Algo mais',
       links: [
-        // {
-        //   label: 'Hackathon do Moinho',
-        //   url: '',
-        //   icon: '<i class="fa fa-robot text-secondary"></i>',
-        // },
         {
           label: 'Blog Pessoal',
           url: 'https://tiagogouvea.com.br/',
           icon: '<i class="fab fa-linkedin text-secondary"></i>',
+        },
+        {
+          label: 'Caminhar e conversar',
+          url: 'https://calendly.com/tiago-gouvea/caminhar-e-conversar',
+          icon: '<i class="fab fa-person-walking text-secondary"></i>',
+        },
+        {
+          label: 'Hackathon do Moinho - Janeiro 2023',
+          url: 'https://hackathon.nossomoinho.com/',
+          icon: '<i class="fa fa-robot text-secondary"></i>',
         },
         {
           label: 'Google Developers Group Juiz de Fora',
