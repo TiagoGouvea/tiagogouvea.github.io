@@ -15,8 +15,25 @@
     />
     <style type="text/css">
       body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         background-image: url(img/kratzer.png);
+      }
+
+      /* Social icons styling */
+      #headerSocial {
+        background-color: rgba(23, 162, 184, 0.08);
+        border-radius: 12px;
+        padding: 6px 12px;
+        min-height: auto;
+      }
+
+      /* Remove background on desktop */
+      @media (min-width: 992px) {
+        #headerSocial {
+          background-color: transparent;
+          padding: 0;
+          border-radius: 0;
+        }
       }
     </style>
 
@@ -25,18 +42,25 @@
   </head>
   <body>
     <div class="container">
-      <div class="d-flex align-items-center mt-4">
-        <!-- ((2)) - Put your image / icon here -->
-        <img
-          alt="TiagoGouvêa"
-          class="rounded-circle img-thumbnail border border-info"
-          src="https://avatars.githubusercontent.com/u/2242549?v=4"
-          style="height: 64px; width: 64px"
-        />
-        <div class="flex-column justify-content-center m-0 ml-3">
-          <!-- ((3)) - Put your brand name or whatever you want -->
-          <h5 id="name" style="color: #324d5c"></h5>
-          <p class="m-0" style="font-size: 0.8rem" id="description"></p>
+      <div class="row mt-4">
+        <div class="col-lg-8 d-flex align-items-center">
+          <!-- ((2)) - Put your image / icon here -->
+          <img
+            alt="TiagoGouvêa"
+            class="rounded-circle img-thumbnail border border-info"
+            src="https://avatars.githubusercontent.com/u/2242549?v=4"
+            style="height: 64px; width: 64px"
+          />
+          <div class="flex-column justify-content-center m-0 ml-3">
+            <!-- ((3)) - Put your brand name or whatever you want -->
+            <h5 id="name" style="color: #324d5c"></h5>
+            <p class="m-0" style="font-size: 0.8rem" id="description"></p>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 d-flex justify-content-lg-end justify-content-center align-items-center mt-1 mt-lg-0"
+        >
+          <div id="headerSocial" class="d-flex"></div>
         </div>
       </div>
       <div id="links" class="flex-column justify-content-center m-0"></div>
@@ -46,6 +70,26 @@
           <!-- ((5)) - Social icon blocks - you can add as many as you want -->
         </ul>
       </div>
+
+      <!-- Language selector -->
+      <!-- <div class="row justify-content-center mt-4 mb-3">
+        <div class="d-flex">
+          <a
+            href="?lang=pt"
+            class="mx-2"
+            style="font-size: 1.5rem; text-decoration: none"
+            title="Português"
+            >🇧🇷</a
+          >
+          <a
+            href="?lang=en"
+            class="mx-2"
+            style="font-size: 1.5rem; text-decoration: none"
+            title="English"
+            >🇺🇸</a
+          >
+        </div>
+      </div> -->
     </div>
 
     <!-- Bootstrap core JavaScript -->
